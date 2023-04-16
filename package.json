@@ -1,0 +1,43 @@
+{
+  "name": "react-handlebars-typescript-sass-lint",
+  "version": "1.0.0",
+  "description": "A sample project using React, Handlebars, TypeScript, SCSS, and ESLint with Prettier.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/templates/index.handlebars",
+    "build": "parcel build src/templates/index.handlebars",
+    "lint": "eslint --ext .ts,.tsx src",
+    "lint:fix": "eslint --ext .ts,.tsx src --fix"
+  },
+  "keywords": [
+    "React",
+    "Handlebars",
+    "TypeScript",
+    "SCSS",
+    "ESLint",
+    "Prettier"
+  ],
+  "author": "Your Name Here",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.35.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "^2.2.0",
+    "prettier": "^2.4.1",
+    "sass-loader": "^12.1.0"
+  }
+}
