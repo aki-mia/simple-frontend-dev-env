@@ -13,4 +13,7 @@ const templateContext = {
 
 const html = template(templateContext);
 
-document.getElementById('root')?.innerHTML = html;
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  rootElement.innerHTML = html;
+}
