@@ -1,43 +1,33 @@
 {
   "name": "react-handlebars-typescript-sass-lint",
   "version": "1.0.0",
-  "description": "A sample project using React, Handlebars, TypeScript, SCSS, and ESLint with Prettier.",
+  "description": "A sample project that demonstrates how to use React with Handlebars, TypeScript, and SCSS.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/templates/index.handlebars",
-    "build": "parcel build src/templates/index.handlebars",
-    "lint": "eslint --ext .ts,.tsx src",
-    "lint:fix": "eslint --ext .ts,.tsx src --fix"
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'"
   },
-  "keywords": [
-    "React",
-    "Handlebars",
-    "TypeScript",
-    "SCSS",
-    "ESLint",
-    "Prettier"
-  ],
+  "keywords": ["react", "handlebars", "typescript", "scss", "lint"],
   "author": "Your Name Here",
   "license": "MIT",
   "dependencies": {
+    "@types/handlebars": "^4.7.7",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "handlebars": "^4.7.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "sass": "^1.35.2",
-    "typescript": "^4.3.5"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "parcel": "^2.3.1",
     "prettier": "^2.4.1",
-    "sass-loader": "^12.1.0"
+    "sass": "^1.41.1",
+    "vite": "^2.7.9"
   }
 }
